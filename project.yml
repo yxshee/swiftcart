@@ -1,0 +1,35 @@
+name: Ecommerce
+options:
+  bundleIdPrefix: com.yashdogra
+  deploymentTarget:
+    iOS: "18.0"
+  xcodeVersion: "15.0"
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    TARGETED_DEVICE_FAMILY: "1,2"
+    DEVELOPMENT_TEAM: ""
+
+targets:
+  Ecommerce:
+    type: application
+    platform: iOS
+    sources:
+      - path: Ecommerce
+        excludes:
+          - "*.xcassets"
+      - path: Ecommerce/Assets.xcassets
+        type: folder
+    settings:
+      base:
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_CFBundleDisplayName: ShopNow
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        GENERATE_INFOPLIST_FILE: YES
+        ENABLE_PREVIEWS: YES
