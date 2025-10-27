@@ -146,7 +146,7 @@ struct CartView: View {
             .frame(height: 6)
         }
         .padding()
-        .background(Color(uiColor: .secondarySystemBackground))
+        .background(Color.appSecondaryBackground)
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }
     

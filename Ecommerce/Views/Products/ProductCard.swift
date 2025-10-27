@@ -18,8 +18,8 @@ struct ProductCard: View {
                     .fill(
                         LinearGradient(
                             colors: [
-                                Color(uiColor: .secondarySystemBackground),
-                                Color(uiColor: .tertiarySystemBackground)
+                                Color.appSecondaryBackground,
+                                Color.appSecondaryBackground.opacity(0.8)
                             ],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
@@ -123,7 +123,7 @@ struct ProductCard: View {
             }
         }
         .padding(12)
-        .background(Color(uiColor: .secondarySystemBackground))
+        .background(Color.appSecondaryBackground)
         .clipShape(RoundedRectangle(cornerRadius: 16))
     }
     

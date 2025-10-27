@@ -8,6 +8,10 @@
 import Foundation
 import SwiftUI
 
+#if canImport(UIKit)
+import UIKit
+#endif
+
 class CartManager: ObservableObject {
     @Published var items: [CartItem] = []
     @Published var isCheckingOut: Bool = false
@@ -77,8 +81,10 @@ class CartManager: ObservableObject {
         }
         
         // Haptic feedback
+        #if canImport(UIKit)
         let generator = UIImpactFeedbackGenerator(style: .medium)
         generator.impactOccurred()
+        #endif
     }
     
     func removeFromCart(_ item: CartItem) {

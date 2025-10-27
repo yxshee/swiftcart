@@ -32,10 +32,19 @@ struct AppConstants {
 // MARK: - Color Extensions
 extension Color {
     static let appPrimary = Color("AccentColor")
+    
+    #if canImport(UIKit)
     static let appBackground = Color(uiColor: .systemBackground)
-    static let appSecondaryBackground = Color(uiColor: .secondarySystemBackground)
+    static let appSecondaryBackground = Color.appSecondaryBackground
     static let appText = Color(uiColor: .label)
     static let appSecondaryText = Color(uiColor: .secondaryLabel)
+    #else
+    static let appBackground = Color(white: 1.0)
+    static let appSecondaryBackground = Color(white: 0.95)
+    static let appText = Color.primary
+    static let appSecondaryText = Color.secondary
+    #endif
+    
     static let appSuccess = Color.green
     static let appError = Color.red
     static let appWarning = Color.orange

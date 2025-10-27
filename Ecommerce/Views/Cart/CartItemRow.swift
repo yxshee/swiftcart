@@ -17,8 +17,8 @@ struct CartItemRow: View {
                 .fill(
                     LinearGradient(
                         colors: [
-                            Color(uiColor: .secondarySystemBackground),
-                            Color(uiColor: .tertiarySystemBackground)
+                            Color.appSecondaryBackground,
+                            Color.appSecondaryBackground.opacity(0.8)
                         ],
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
@@ -72,7 +72,7 @@ struct CartItemRow: View {
                                 .font(.caption.weight(.medium))
                                 .foregroundColor(item.quantity == 1 ? .red : .primary)
                                 .frame(width: 32, height: 32)
-                                .background(Color(uiColor: .secondarySystemBackground))
+                                .background(Color.appSecondaryBackground)
                         }
                         
                         Text("\(item.quantity)")
@@ -84,7 +84,7 @@ struct CartItemRow: View {
                                 .font(.caption.weight(.medium))
                                 .foregroundColor(.primary)
                                 .frame(width: 32, height: 32)
-                                .background(Color(uiColor: .secondarySystemBackground))
+                                .background(Color.appSecondaryBackground)
                         }
                     }
                     .clipShape(RoundedRectangle(cornerRadius: 8))
@@ -96,7 +96,7 @@ struct CartItemRow: View {
             }
         }
         .padding()
-        .background(Color(uiColor: .secondarySystemBackground))
+        .background(Color.appSecondaryBackground)
         .clipShape(RoundedRectangle(cornerRadius: 16))
         .opacity(isRemoving ? 0.5 : 1)
         .scaleEffect(isRemoving ? 0.95 : 1)
