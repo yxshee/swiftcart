@@ -15,6 +15,8 @@ A complete, production-ready iOS ecommerce application built with SwiftUI featur
 
 ---
 
+![home](assets/home_screen.png)
+
 ## ✨ Features
 
 ### 🛍️ Product Management
