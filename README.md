@@ -16,8 +16,7 @@ A complete, production-ready iOS ecommerce application built with SwiftUI featur
 ---
 
 
-
-<img src="assets/02.png" alt="home" width="23%">  <img src="assets/03.png" alt="home" width="23%">  <img src="assets/01.png" alt="home" width="23%">  <img src="assets/home_screen.png" alt="home" width="23%">
+ <img src="assets/home_screen.png" alt="home" width="23%"> <img src="assets/02.png" alt="home" width="23%">  <img src="assets/03.png" alt="home" width="23%">  <img src="assets/01.png" alt="home" width="23%"> 
 
 
 
