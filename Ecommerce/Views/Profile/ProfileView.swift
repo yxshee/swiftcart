@@ -113,7 +113,7 @@ struct ProfileView: View {
                 StatItem(value: "5", label: "Reviews")
             }
             .padding()
-            .background(Color(uiColor: .secondarySystemBackground))
+            .background(Color.appSecondaryBackground)
             .clipShape(RoundedRectangle(cornerRadius: 16))
             .padding(.horizontal)
         }
@@ -129,7 +129,7 @@ struct ProfileView: View {
             VStack(spacing: 0) {
                 content()
             }
-            .background(Color(uiColor: .secondarySystemBackground))
+            .background(Color.appSecondaryBackground)
             .clipShape(RoundedRectangle(cornerRadius: 12))
             .padding(.horizontal)
         }

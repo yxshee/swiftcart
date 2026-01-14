@@ -188,7 +188,7 @@ struct CheckoutView: View {
                                 .foregroundColor(selectedPaymentMethod == method ? .gradientStart : .secondary)
                         }
                         .padding()
-                        .background(Color(uiColor: .secondarySystemBackground))
+                        .background(Color.appSecondaryBackground)
                         .clipShape(RoundedRectangle(cornerRadius: 12))
                         .overlay(
                             RoundedRectangle(cornerRadius: 12)
@@ -223,7 +223,7 @@ struct CheckoutView: View {
                     ForEach(cartManager.items) { item in
                         HStack(spacing: 12) {
                             RoundedRectangle(cornerRadius: 8)
-                                .fill(Color(uiColor: .secondarySystemBackground))
+                                .fill(Color.appSecondaryBackground)
                                 .frame(width: 50, height: 50)
                                 .overlay {
                                     Image(systemName: "bag")
@@ -247,7 +247,7 @@ struct CheckoutView: View {
                     }
                 }
                 .padding()
-                .background(Color(uiColor: .secondarySystemBackground))
+                .background(Color.appSecondaryBackground)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
                 
                 // Shipping Address Summary
@@ -268,7 +268,7 @@ struct CheckoutView: View {
                 }
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .background(Color(uiColor: .secondarySystemBackground))
+                .background(Color.appSecondaryBackground)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
                 
                 // Payment Method Summary
@@ -290,7 +290,7 @@ struct CheckoutView: View {
                 }
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .background(Color(uiColor: .secondarySystemBackground))
+                .background(Color.appSecondaryBackground)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
                 
                 // Order Total
@@ -326,7 +326,7 @@ struct CheckoutView: View {
                 }
                 .font(.subheadline)
                 .padding()
-                .background(Color(uiColor: .secondarySystemBackground))
+                .background(Color.appSecondaryBackground)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
             }
             .padding()
@@ -427,7 +427,7 @@ struct CustomTextField: View {
                     .font(.subheadline)
             }
             .padding()
-            .background(Color(uiColor: .secondarySystemBackground))
+            .background(Color.appSecondaryBackground)
             .clipShape(RoundedRectangle(cornerRadius: 10))
         }
     }

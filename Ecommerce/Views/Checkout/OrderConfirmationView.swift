@@ -103,7 +103,7 @@ struct OrderConfirmationView: View {
                     )
                 }
                 .padding()
-                .background(Color(uiColor: .secondarySystemBackground))
+                .background(Color.appSecondaryBackground)
                 .clipShape(RoundedRectangle(cornerRadius: 16))
                 .padding(.horizontal)
                 

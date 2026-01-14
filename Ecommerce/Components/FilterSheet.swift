@@ -88,7 +88,7 @@ struct FilterSheet: View {
                         }
                         .tint(.gradientStart)
                         .padding()
-                        .background(Color(uiColor: .secondarySystemBackground))
+                        .background(Color.appSecondaryBackground)
                         .clipShape(RoundedRectangle(cornerRadius: 12))
                     }
                 }
@@ -161,7 +161,7 @@ struct FilterChip: View {
                         startPoint: .leading,
                         endPoint: .trailing
                     )) :
-                    AnyShapeStyle(Color(uiColor: .secondarySystemBackground))
+                    AnyShapeStyle(Color.appSecondaryBackground)
                 )
                 .clipShape(Capsule())
                 .overlay(

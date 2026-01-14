@@ -275,7 +275,7 @@ struct CategoryChip: View {
                         startPoint: .leading,
                         endPoint: .trailing
                     )) :
-                    AnyShapeStyle(Color(uiColor: .secondarySystemBackground))
+                    AnyShapeStyle(Color.appSecondaryBackground)
                 )
                 .clipShape(Capsule())
         }
@@ -290,7 +290,7 @@ struct ProductListRow: View {
         HStack(spacing: 12) {
             // Image placeholder
             RoundedRectangle(cornerRadius: 12)
-                .fill(Color(uiColor: .secondarySystemBackground))
+                .fill(Color.appSecondaryBackground)
                 .frame(width: 80, height: 80)
                 .overlay {
                     Image(systemName: "photo")
@@ -335,7 +335,7 @@ struct ProductListRow: View {
                 .foregroundColor(.secondary)
         }
         .padding()
-        .background(Color(uiColor: .secondarySystemBackground))
+        .background(Color.appSecondaryBackground)
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }

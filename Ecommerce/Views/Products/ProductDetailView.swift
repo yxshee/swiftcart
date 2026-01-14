@@ -90,8 +90,8 @@ struct ProductDetailView: View {
         ZStack(alignment: .topLeading) {
             LinearGradient(
                 colors: [
-                    Color(uiColor: .secondarySystemBackground),
-                    Color(uiColor: .tertiarySystemBackground)
+                    Color.appSecondaryBackground,
+                    Color.appSecondaryBackground.opacity(0.8)
                 ],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
@@ -200,7 +200,7 @@ struct ProductDetailView: View {
                                     startPoint: .leading,
                                     endPoint: .trailing
                                 )) :
-                                AnyShapeStyle(Color(uiColor: .secondarySystemBackground))
+                                AnyShapeStyle(Color.appSecondaryBackground)
                             )
                             .clipShape(Capsule())
                             .overlay(
@@ -234,7 +234,7 @@ struct ProductDetailView: View {
                                     startPoint: .leading,
                                     endPoint: .trailing
                                 )) :
-                                AnyShapeStyle(Color(uiColor: .secondarySystemBackground))
+                                AnyShapeStyle(Color.appSecondaryBackground)
                             )
                             .clipShape(RoundedRectangle(cornerRadius: 8))
                             .overlay(
@@ -261,7 +261,7 @@ struct ProductDetailView: View {
                         .font(.caption.weight(.bold))
                         .foregroundColor(quantity > 1 ? .primary : .secondary)
                         .frame(width: 36, height: 36)
-                        .background(Color(uiColor: .secondarySystemBackground))
+                        .background(Color.appSecondaryBackground)
                 }
                 .disabled(quantity <= 1)
                 
@@ -274,7 +274,7 @@ struct ProductDetailView: View {
                         .font(.caption.weight(.bold))
                         .foregroundColor(.primary)
                         .frame(width: 36, height: 36)
-                        .background(Color(uiColor: .secondarySystemBackground))
+                        .background(Color.appSecondaryBackground)
                 }
             }
             .clipShape(RoundedRectangle(cornerRadius: 8))
