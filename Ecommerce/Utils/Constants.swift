@@ -35,7 +35,7 @@ extension Color {
     
     #if canImport(UIKit)
     static let appBackground = Color(uiColor: .systemBackground)
-    static let appSecondaryBackground = Color.appSecondaryBackground
+    static let appSecondaryBackground = Color(uiColor: .secondarySystemBackground)
     static let appText = Color(uiColor: .label)
     static let appSecondaryText = Color(uiColor: .secondaryLabel)
     #else
@@ -114,3 +114,4 @@ extension String {
         return phonePredicate.evaluate(with: self.replacingOccurrences(of: " ", with: ""))
     }
 }
+
