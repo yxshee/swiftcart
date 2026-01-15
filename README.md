@@ -1,13 +1,13 @@
-# ShopNow - SwiftUI Ecommerce App
+# SwiftCart — SwiftUI Ecommerce App
 
 <div align="center">
 
-![iOS](https://img.shields.io/badge/iOS-18.0+-blue.svg)
+![iOS](https://img.shields.io/badge/iOS-18.0%2B-blue.svg)
 ![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-3.0-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-A complete, production-ready iOS ecommerce application built with SwiftUI featuring product listings, shopping cart, checkout flow, and modern UI/UX.
+**A production-ready iOS ecommerce experience built in SwiftUI** — product browsing, cart, checkout, and a modern, polished UI.
 
 [Features](#features) • [Installation](#installation) • [Architecture](#architecture) • [Screenshots](#screenshots) • [API](#api-integration)
 
@@ -15,47 +15,47 @@ A complete, production-ready iOS ecommerce application built with SwiftUI featur
 
 ---
 
-
- <img src="assets/home_screen.png" alt="home" width="23%"> <img src="assets/02.png" alt="home" width="23%">  <img src="assets/03.png" alt="home" width="23%">  <img src="assets/01.png" alt="home" width="23%"> 
-
-
-
 ## ✨ Features
 
 ### 🛍️ Product Management
-- **Smart Product Listing** - Grid/List view toggle with smooth animations
-- **Advanced Filtering** - Category, price range, and availability filters
-- **Multi-Sort Options** - Sort by newest, price, rating, or popularity
-- **Infinite Scroll** - Pagination with automatic loading
-- **Search** - Real-time product search
-- **Featured Deals** - Highlighted promotional products
+- **Smart Product Listing** — Grid/List toggle with smooth animations
+- **Advanced Filtering** — Category, price range, and availability filters
+- **Multi-Sort Options** — Sort by newest, price, rating, or popularity
+- **Infinite Scroll** — Pagination with automatic loading
+- **Search** — Real-time product search
+- **Featured Deals** — Highlighted promotional products
 
 ### 🛒 Shopping Cart
-- **Real-time Updates** - Live price calculations
-- **Quantity Controls** - Increment/decrement with haptic feedback
-- **Free Shipping Tracker** - Visual progress indicator
-- **Persistent State** - Cart preserved across app sessions
-- **Swipe to Delete** - Intuitive item removal
+- **Real-time Updates** — Live price calculations
+- **Quantity Controls** — Increment/decrement with haptic feedback
+- **Free Shipping Tracker** — Visual progress indicator
+- **Persistent State** — Cart preserved across app sessions
+- **Swipe to Delete** — Intuitive item removal
 
 ### 💳 Checkout Flow
-- **Multi-step Process** - Shipping → Payment → Review
-- **Form Validation** - Real-time input validation
-- **Multiple Payment Methods** - Credit Card, Apple Pay, PayPal
-- **Order Confirmation** - Animated success screen
+- **Multi-step Process** — Shipping → Payment → Review
+- **Form Validation** — Real-time input validation
+- **Multiple Payment Methods** — Credit Card, Apple Pay, PayPal
+- **Order Confirmation** — Animated success screen
 
 ### 🎨 UI/UX Excellence
-- **Custom Gradient Theme** - Beautiful purple/pink gradients
-- **Dark Mode Support** - Fully adaptive design
-- **Smooth Animations** - Spring animations and transitions
-- **Empty States** - Thoughtful placeholders
-- **Loading States** - Shimmer effects and spinners
-- **Error Handling** - User-friendly error messages
+- **Custom Gradient Theme** — Purple/pink gradients
+- **Dark Mode Support** — Fully adaptive design
+- **Smooth Animations** — Spring animations and transitions
+- **Empty States** — Thoughtful placeholders
+- **Loading States** — Shimmer effects and spinners
+- **Error Handling** — User-friendly error messages
 
 ---
 
 ## 📱 Screenshots
 
-> **Note**: Add your app screenshots here
+<!-- > **Note**: Add your app screenshots here -->
+
+<img src="assets/02.png" alt="home" width="200" height="200">
+<img src="assets/03.png" alt="home" width="200" height="200">
+<img src="assets/01.png" alt="home" width="200" height="200">
+<img src="assets/home_screen.png" alt="home" width="200" height="200">
 
 ---
 
@@ -250,7 +250,7 @@ Response:
 
 ## 📦 Dependencies
 
-This project has **zero external dependencies** - built entirely with native Swift and SwiftUI frameworks!
+This project has **zero external dependencies** — built entirely with native Swift and SwiftUI frameworks.
 
 ---
 
@@ -292,7 +292,7 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
 
