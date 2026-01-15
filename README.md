@@ -15,6 +15,19 @@
 
 ---
 
+## 📱 Screenshots
+
+<div align="center">
+
+<img src="assets/home_screen.png" alt="home" width="23%">
+<img src="assets/01.png" alt="product detail" width="23%">
+<img src="assets/02.png" alt="cart" width="23%">
+<img src="assets/03.png" alt="checkout" width="23%">
+
+</div>
+
+---
+
 ## ✨ Features
 
 ### 🛍️ Product Management
@@ -48,17 +61,6 @@
 
 ---
 
-## 📱 Screenshots
-
-<!-- > **Note**: Add your app screenshots here -->
-
-<img src="assets/02.png" alt="home" width="200" height="200">
-<img src="assets/03.png" alt="home" width="200" height="200">
-<img src="assets/01.png" alt="home" width="200" height="200">
-<img src="assets/home_screen.png" alt="home" width="200" height="200">
-
----
-
 ## 🚀 Installation
 
 ### Prerequisites
@@ -70,8 +72,8 @@
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/shopnow-swiftui.git
-cd shopnow-swiftui
+git clone https://github.com/yxshee/swiftcart.git
+cd swiftcart
 ```
 
 2. **Open in Xcode**
@@ -91,24 +93,11 @@ open "Ecommerce.xcodeproj"
 ## 🏗️ Architecture
 
 ### MVVM Pattern
-```
-┌─────────────────────────────────────────┐
-│              Views (SwiftUI)            │
-│  ProductListView, CartView, etc.        │
-└────────────────┬────────────────────────┘
-                 │
-                 ▼
-┌─────────────────────────────────────────┐
-│           ViewModels                     │
-│  @ObservableObject: CartManager,        │
-│  ProductStore                            │
-└────────────────┬────────────────────────┘
-                 │
-                 ▼
-┌─────────────────────────────────────────┐
-│        Services & Models                 │
-│  NetworkManager, Product, Order          │
-└─────────────────────────────────────────┘
+```mermaid
+graph TD
+    View[SwiftUI View] <-->|Binding| ViewModel[ViewModel]
+    ViewModel <-->|Async/Await| Service[Network Service]
+    Service <-->|JSON| Model[Data Model]
 ```
 
 ### Project Structure
@@ -280,7 +269,7 @@ This project has **zero external dependencies** — built entirely with native S
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+Contributions are welcome! Please see [CONTRIBUTING.md](docs/CONTRIBUTING.md) for details.
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
