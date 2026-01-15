@@ -15,16 +15,9 @@
 
 ---
 
-## 📱 Screenshots
 
-<div align="center">
+<video controls src="assets/demo.mov" title="Demo"></video>
 
-<img src="assets/home_screen.png" alt="home" width="23%">
-<img src="assets/01.png" alt="product detail" width="23%">
-<img src="assets/02.png" alt="cart" width="23%">
-<img src="assets/03.png" alt="checkout" width="23%">
-
-</div>
 
 ---
 
@@ -127,6 +120,19 @@ Ecommerce/
 └── Utils/
     └── Constants.swift          # App constants & extensions
 ```
+
+---
+
+## 📱 Screenshots
+
+<div align="center">
+
+<img src="assets/home_screen.png" alt="home" width="23%">
+<img src="assets/01.png" alt="product detail" width="23%">
+<img src="assets/02.png" alt="cart" width="23%">
+<img src="assets/03.png" alt="checkout" width="23%">
+
+</div>
 
 ---
 
